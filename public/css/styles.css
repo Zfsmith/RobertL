@@ -1,13 +1,14 @@
 body{
-	background-color: #eaeaea;
+	background-color: #d0d0d0;
+	font-family: Cambria, Georgia, serif;
 }
 
 .container{
-	width: 75%;
 	margin: auto;
 	display: flex;
   min-height: 100vh;
   flex-direction: column;
+	background-color: #d0d0d0;
 }
 
 .nav-top{
@@ -20,12 +21,12 @@ body{
 	display: flex;
 	/*justify-content: space-around;*/
   height: 3em;
-	margin-top: 40px;
-  background-color: #2b5279;
+	margin-top: 60px;
+  background-color: #344D75;
 }
 
 .navigation {
-	margin-right: 100px;
+	margin-right: 20%;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -39,17 +40,17 @@ body{
     text-decoration: none;
     display: block;
     padding: 1em;
-    color: #fff;
+    color: #F9FBFD;
 }
 
 .label{
-  background-color: #eaeaea;
+  background-color: #d0d0d0;
 	margin-top: 0;
 	/*justify-content: center;*/
 	position: absolute;
 	left: 17%;
-	top: 12px;
-	height: 103px;
+	top: 10px;
+	height: 147px;
 }
 
 .logo{
@@ -57,8 +58,13 @@ body{
   width:400px;
 }
 
+
+
 .main{
+	width: 65%;
+	margin: auto;
 	flex: 1;
+	margin-top: 100px;
 }
 
 .main-pic{
@@ -67,8 +73,30 @@ body{
 }
 
 .footer{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-flex-flow: row wrap;
+	align-items: center;
+	width: 65%;
+	margin: auto;
 	height: 200px;
-	background-color: #303030;
+	color: #003da5;
+	font-size: 110%;
+	/*background-color: #F2641D;*/
+}
+
+.footer a {
+	text-decoration: none;
+	color: #003da5;
+
+}
+
+.footer li {
+	padding: 4px;
 }
 
 @media all and (max-width: 1200px) {
@@ -80,28 +108,60 @@ body{
 	.label{
 		left: 5%;
 	}
+
+	.navigation{
+		margin-right: 10%;
+	}
+
+	.footer{
+		width: 90%;
+		margin: auto;
+	}
+	.main{
+		width: 90%;
+		margin: auto;
+		margin-top: 100px;
+	}
 }
 
 @media all and (max-width: 800px) {
 
 	.label{
 		position: static;
+		height: auto;
 	}
 
   .logo{
     box-shadow: none;
   }
 
-	.nav-top{
+	.footer{
 		-webkit-flex-flow: column wrap;
-	    flex-flow: column wrap;
-	    padding: 0;
-      height: auto;
+	  flex-flow: column wrap;
+		justify-content: space-around;
+		width: 100%;
+		margin: auto;
+	}
+	.main{
+		width: 100%;
+		margin: auto;
+	}
+
+	.nav-top{
+	  -webkit-flex-flow: column wrap;
+	  flex-flow: column wrap;
+	  padding: 0;
+    height: auto;
+		margin-top: 0;
 	}
   .navigation {
     	justify-content: space-around;
 			margin-right: 0;
   }
+
+	.bot-links{
+		display: none;
+	}
 }
 @media all and (max-width: 600px) {
     .navigation {
@@ -109,6 +169,10 @@ body{
 	    flex-flow: column wrap;
 	    padding: 0;
   }
+	.logo{
+		width: 100%;
+    height: auto;
+	}
 
   	.navigation a {
     	text-align: center;
