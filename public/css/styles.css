@@ -3,6 +3,21 @@ body{
 	font-family: Cambria, Georgia, serif;
 }
 
+.content-header{
+	font-size: 200%;
+	font-weight: bold;
+  padding: 20px;
+	color: #344D75;
+}
+
+.line{
+	margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #717171;
+	max-width: 600px;
+}
+
 .container{
 	margin: auto;
 	display: flex;
@@ -63,8 +78,32 @@ body{
 .main{
 	width: 65%;
 	margin: auto;
-	flex: 1;
-	margin-top: 100px;
+	flex: 1 100%;
+	margin-top: 60px;
+
+	display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+}
+
+.main-content{
+	/*background-color: #fff;*/
+
+	flex: 2;
+	margin: 20px;
+}
+
+.aside{
+	/*background-color: #fff;*/
+
+	flex: 1 auto;
+	margin: 20px;
+
 }
 
 .main-pic{
@@ -86,7 +125,6 @@ body{
 	height: 200px;
 	color: #003da5;
 	font-size: 110%;
-	/*background-color: #F2641D;*/
 }
 
 .footer a {
@@ -97,6 +135,61 @@ body{
 
 .footer li {
 	padding: 4px;
+}
+
+.contact-form{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	align-items: flex-start;
+	margin-left: 50px;
+	margin-top: 40px;
+	margin: 20px;
+  color: #777777;
+  font-size: 120%;
+	line-height: 190%;
+}
+
+.contact-input{
+	width: 100%;
+	max-width: 600px;
+  font-size: 125%;
+  color: #777777;
+  border: 1px solid #cccccc;
+	-webkit-appearance: textfield;
+  background-color: white;
+  /*-webkit-rtl-ordering: logical;*/
+  user-select: text;
+  cursor: auto;
+}
+
+.contact-submit{
+	width: 150px;
+  height: 50px;
+  background-color: #344D75;
+  border: 1px solid #cccccc;
+  font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+  font-weight: bold;
+  font-size: 120%;
+  color: #fff;
+	margin-top:20px;
+}
+
+textarea{
+	border: 1px solid #cccccc;
+  font-size: 125%;
+  color: #777777;
+  width: 99.3%;
+	max-width: 598px;
+}
+
+submit{
+	padding-top: 20px;
 }
 
 @media all and (max-width: 1200px) {
@@ -120,7 +213,7 @@ body{
 	.main{
 		width: 90%;
 		margin: auto;
-		margin-top: 100px;
+		margin-top: 60px;
 	}
 }
 
@@ -132,7 +225,9 @@ body{
 	}
 
   .logo{
+		display:block;
     box-shadow: none;
+		margin: auto;
   }
 
 	.footer{
