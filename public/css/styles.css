@@ -98,14 +98,6 @@ body{
 	margin: 20px;
 }
 
-.aside{
-	/*background-color: #fff;*/
-
-	flex: 1 auto;
-	margin: 20px;
-
-}
-
 .main-pic{
 	width: 100%;
   height: auto;
@@ -158,6 +150,7 @@ body{
 .contact-input{
 	width: 100%;
 	max-width: 600px;
+	/*min-width: 300px;*/
   font-size: 125%;
   color: #777777;
   border: 1px solid #cccccc;
@@ -178,6 +171,54 @@ body{
   font-size: 120%;
   color: #fff;
 	margin-top:20px;
+}
+
+.aside{
+	/*background-color: #fff;*/
+	flex: 1;
+	margin: 20px;
+	padding: 20px;
+}
+
+.aside-links li{
+	width: 160px;
+  height: 100px;
+	text-align: center;
+}
+
+.contact-now p{
+	padding-top: 25px;
+}
+
+.call-now{
+	line-height: 100px;
+}
+
+.aside-links a{
+	text-decoration: none;
+  background-color: #344D75;
+  border: 1px solid #cccccc;
+  font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+  font-weight: bold;
+  font-size: 130%;
+  color: #fff;
+	margin-top: 20px;
+}
+
+.aside-links{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	-webkit-flex-flow: column wrap;
+	align-items: center;
+	/*width: 65%;*/
+	/*margin: auto;*/
+	/*height: 150px;*/
+	color: #344D75;
+	font-size: 110%;
 }
 
 textarea{
