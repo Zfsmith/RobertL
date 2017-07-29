@@ -7,6 +7,7 @@ body{
 	font-size: 200%;
 	font-weight: bold;
   padding: 20px;
+	padding-bottom: 0;
 	color: #344D75;
 }
 
@@ -52,6 +53,8 @@ body{
 }
 
 .navigation a {
+		font-family: 'Merriweather', serif;
+		letter-spacing: .5px;
     text-decoration: none;
     display: block;
     padding: 1em;
@@ -73,13 +76,12 @@ body{
   width:400px;
 }
 
-
-
 .main{
 	width: 65%;
 	margin: auto;
 	flex: 1 100%;
 	margin-top: 60px;
+	padding-top: 40px;
 
 	display: -webkit-box;
   display: -moz-box;
@@ -91,6 +93,17 @@ body{
   font-weight: bold;
 }
 
+.main-text{
+	font-family: 'Merriweather', serif;
+	font-weight: normal;
+	padding-left: 30px;
+	line-height: 110%;
+}
+
+.thank-you{
+	margin-top: 50px;
+}
+
 .main-content{
 	/*background-color: #fff;*/
 
@@ -98,12 +111,26 @@ body{
 	margin: 20px;
 }
 
+.services-list{
+	margin-left: 20px;
+	list-style-type: circle;
+	line-height: 130%;
+}
+
 .main-pic{
 	width: 100%;
   height: auto;
 }
 
+.footer-container{
+	width: 100%;
+	background-color: #505050;
+}
+
 .footer{
+	font-family: 'Merriweather', serif;
+	font-weight: normal;
+	letter-spacing: .5px;
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -114,14 +141,14 @@ body{
 	align-items: center;
 	width: 65%;
 	margin: auto;
-	height: 150px;
-	color: #344D75;
-	font-size: 110%;
+	min-height: 150px;
+	color: #F9FBFD;
+	font-size: 85%;
 }
 
 .footer a {
 	text-decoration: none;
-	color: #344D75;
+	color: #F9FBFD;
 
 }
 
@@ -155,6 +182,7 @@ body{
   color: #777777;
   border: 1px solid #cccccc;
 	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
   background-color: white;
   /*-webkit-rtl-ordering: logical;*/
   user-select: text;
@@ -249,7 +277,9 @@ submit{
 
 	.footer{
 		width: 90%;
-		margin: auto;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		/*margin: auto;*/
 	}
 	.main{
 		width: 90%;
@@ -276,8 +306,13 @@ submit{
 	  flex-flow: column wrap;
 		justify-content: space-around;
 		width: 100%;
-		margin: auto;
+		/*margin: auto;*/
 	}
+
+	.footer-items{
+		padding: 10px;
+	}
+
 	.main{
 		width: 100%;
 		margin: auto;
@@ -300,11 +335,21 @@ submit{
 	}
 }
 @media all and (max-width: 600px) {
-    .navigation {
+  .navigation {
 	    -webkit-flex-flow: column wrap;
 	    flex-flow: column wrap;
 	    padding: 0;
   }
+
+.main{
+	-webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+	.aside-links{
+		-webkit-flex-flow: row wrap;
+	  flex-flow: row wrap;
+	}
 	.logo{
 		width: 100%;
     height: auto;
